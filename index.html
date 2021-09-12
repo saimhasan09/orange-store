@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FakeStore</title>
+  <title>Orange store</title>
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -18,13 +18,15 @@
 </head>
 
 <body>
-  <header></header>
+  <header>
+    <h1 class="text-center"><span class="name-color">Orange</span> Store</h1>
+  </header>
   <main class="main">
     <div class="search-field">
       <div class="search-box">
         <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
+        <button type="button" class="btn  search-button" data-toggle="button" aria-pressed="false" autocomplete="off"
+          id="search-btn" onclick="loadProducts()">
           Search
         </button>
       </div>
@@ -32,7 +34,6 @@
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
-          <h1></h1>
         </div>
       </div>
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
@@ -50,7 +51,7 @@
             <tbody>
               <tr>
                 <th>Total Added-Products:</th>
-                <td>$ <span id="total-Products">0</span></td>
+                <td><span id="total-Products">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
@@ -80,7 +81,7 @@
             </tbody>
           </table>
           <div class="parces text-center">
-            <button class="btn btn-primary text-center">Buy Now</button>
+            <button class="btn buy-btn text-center">Buy Now</button>
           </div>
         </div>
       </div>

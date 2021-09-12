@@ -2,6 +2,9 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+.name-color{
+  color: rgb(241, 117, 45);
+}
 .search-field {
   border: none;
   border-radius: 50px;
@@ -13,36 +16,48 @@ body {
   border: none;
 }
 .search-box {
-  border: 1px solid rgb(3, 118, 211);
+  border: 1px solid rgb(238, 127, 76);
   width: 281px;
-  border-radius: 5px;
+  border-radius: 20px;
   margin: auto;
   margin-top: 50px;
   border-right: none;
+  
 }
 .search-button {
   padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
+  
+  margin-left: 25px;
+  background-color: rgb(238, 127, 76);
+  color: rgb(40, 40, 41);
+
 }
+#search-btn{
+  border-radius: 35px;
+}
+
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* border: 1px solid black; */
   text-align: center;
   width: 100%;
+  
   margin: auto;
   align-items: center;
   justify-content: center;
 }
 .single-product {
-  padding: 10px;
+  padding: 15px;
+  height: 530px;
   transition: 0.6s;
+  background-color: rgb(199, 196, 196);
 }
 .single-product:hover {
-  box-shadow: 4px 4px 7px gray;
-  border-radius: 10px;
-  border: 1px solid cyan;
+  box-shadow: 4px 4px 7px rgb(80, 79, 79);
+  border-radius: 15px;
+  border: 1px solid rgb(236, 149, 77);
+  background-color: rgb(136, 136, 136);
 }
 .product-image {
   width: 150px;
@@ -52,7 +67,7 @@ body {
   width: 350px;
   /* border: 1px solid green; */
   padding: 10px;
-  box-shadow: 10px 10px 20px gray;
+  box-shadow: 10px 10px 20px rgb(165, 165, 165);
   border-radius: 5px;
   margin-right: 30px;
   position: fixed;
@@ -69,14 +84,19 @@ body {
     width: 300px;
     /* border: 1px solid green; */
     padding: 10px;
-    box-shadow: 10px 10px 20px gray;
-    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgb(179, 179, 179);
+    border-radius: 10px;
     margin-right: 30px;
     position: fixed;
   }
   .cart-main {
     padding-right: 10px;
   }
+  
+}
+.buy-btn{
+  background-color: rgb(228, 122, 74);
+  color: rgb(39, 39, 39);
 }
 @media only screen and (max-width: 468px) {
   #all-products {
